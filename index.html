@@ -243,7 +243,6 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
 .offer .plus{flex-basis:100%;font-weight:600;color:var(--green-deep)}
 .countdown{font-size:1rem;color:#EEF6EB}
 .countdown b{font-variant-numeric:tabular-nums;color:#fff;font-size:1.15rem}
-.stamp{font-family:var(--hand);font-weight:700;font-size:clamp(1.7rem,3.2vw,2.3rem);line-height:1.15;color:var(--yellow)}
 .join-card{background:var(--paper);color:var(--ink);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px;box-shadow:0 12px 0 rgba(0,0,0,.14)}
 .join-card h3{font-size:1.9rem}
 .field{display:flex;flex-direction:column;gap:6px}
@@ -265,8 +264,11 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
 /* Footer */
 .foot{background:var(--cream-deep);padding-block:56px 64px;text-align:center}
 .foot-in{display:flex;flex-direction:column;align-items:center;gap:12px}
-.thanks{font-family:var(--hand);font-weight:700;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.1}
-.foot .names{font-size:1.02rem}
+.foot-brand{font-family:var(--hand);font-weight:700;font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.1;color:var(--terracotta)}
+.presenters{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 56px;margin-block:6px 4px}
+.presenters p{display:flex;flex-direction:column;gap:2px}
+.presenters span{font-family:var(--hand);font-size:1.1rem;color:var(--muted)}
+.presenters b{font-size:1.08rem;font-weight:600}
 .foot .small{font-size:.82rem;color:var(--muted);max-width:60ch}
 
 /* Toast */
@@ -363,7 +365,7 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
       <div class="hero-copy">
         <p class="eyebrow"><svg class="zig" aria-hidden="true"><use href="#zig"/></svg>Not another boring class!</p>
         <h1>Cook gourmet at home, with a real chef watching you <span class="hl">live</span>.</h1>
-        <p class="lead">100% online: breakfast, lunch, dinner or even a romantic date night. A professional chef gives you real-time help, from the comfort of your own home.</p>
+        <p class="lead">100% online. Morning pancakes, a quick lunch or a special dinner for two: a professional chef cooks with you in real time, wherever your kitchen is.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#classes">Join an online class</a>
           <a class="btn btn-ghost" href="#how">See how it works</a>
@@ -407,29 +409,29 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow"><svg class="zig" aria-hidden="true"><use href="#zig"/></svg>Sound familiar?</p>
-        <h2>Tired of rice and a fried egg?</h2>
-        <p class="lead">Hours lost searching for recipes on YouTube, TikTok and Instagram… and dinner ends up being rice and a fried egg. Frustrating, right?</p>
+        <h2>Bored of eating the same thing every day?</h2>
+        <p class="lead">Endless recipe videos, missing ingredients and the same simple meals on repeat. Cooking at home doesn't have to feel like that.</p>
       </div>
       <div class="compare">
         <article class="cmp cmp-old">
           <h3>Tonight, the usual way</h3>
           <ol>
-            <li><span class="mark" aria-hidden="true">✕</span><span><span class="app">YouTube</span>Fourteen tabs of “easy pasta”</span></li>
-            <li><span class="mark" aria-hidden="true">✕</span><span><span class="app">TikTok</span>A recipe with no amounts</span></li>
-            <li><span class="mark" aria-hidden="true">✕</span><span><span class="app">Instagram</span>Saved the reel, never opened it</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>Twenty minutes scrolling recipe videos</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>A recipe with no amounts</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>Saved it for later, never opened it</span></li>
             <li><span class="mark" aria-hidden="true">✕</span><span>Half the ingredients are missing</span></li>
           </ol>
-          <p class="result">Result: <strong>rice and a fried egg</strong>. Again.</p>
+          <p class="result">Result: <strong>the same simple dinner</strong>. Again.</p>
         </article>
         <article class="cmp cmp-new">
           <h3>Tonight, with us</h3>
           <ol>
             <li><span class="mark" aria-hidden="true">✓</span><span>Pick an online class in one tap</span></li>
             <li><span class="mark" aria-hidden="true">✓</span><span>Your pre-measured kit is already at home</span></li>
-            <li><span class="mark" aria-hidden="true">✓</span><span>A chef watches you cook and helps on the spot</span></li>
-            <li><span class="mark" aria-hidden="true">✓</span><span>Missing something? Instant substitutions</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>A chef sees your pan and answers your questions</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>Missing something? The chef gives you a swap</span></li>
           </ol>
-          <p class="result">Result: <strong>homemade lasagna</strong>, faster than you'd expect.</p>
+          <p class="result">Result: <strong>homemade lasagna</strong>, ready to share.</p>
         </article>
       </div>
     </div>
@@ -441,7 +443,7 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
       <div class="sec-head">
         <p class="eyebrow"><svg class="zig" aria-hidden="true"><use href="#zig"/></svg>Live chefs · 100% online</p>
         <h2>Today's online classes</h2>
-        <p class="lead">Professional chefs watch you cook live, suggest ingredient substitutions on the spot and help you prepare gourmet dishes faster than you'd expect. All you need is your kitchen and a phone, tablet or laptop.</p>
+        <p class="lead">Pick a time, open your kit and cook alongside a professional chef who can see your pan and answer your questions as you go. All you need is your kitchen and a phone, tablet or laptop.</p>
       </div>
       <div class="tabs" role="tablist" aria-label="Meal">
         <button class="tab" role="tab" type="button" id="tab-breakfast" aria-controls="classGrid" aria-selected="false" data-cat="breakfast">Breakfast</button>
@@ -459,27 +461,27 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow"><svg class="zig" aria-hidden="true"><use href="#zig"/></svg>How it works</p>
-        <h2>More than a simple tutorial</h2>
-        <p class="lead">Three things you won't find in a recipe video.</p>
+        <h2>What you get in every class</h2>
+        <p class="lead">Three things that make the difference in your kitchen.</p>
       </div>
       <div class="steps">
         <article class="step">
           <div class="step-top"><span class="step-n">1</span><svg class="ico" aria-hidden="true"><use href="#icoMenu"/></svg></div>
           <h3>Personalized menus</h3>
-          <p>Vegan, gluten-free, low-carb or cooking for a family with picky eaters: the recipes adapt to your exact lifestyle.</p>
+          <p>Tell us how you eat once: vegan, gluten-free, low-carb or a family menu. Every recipe, class and box follows it.</p>
         </article>
         <article class="step">
           <div class="step-top"><span class="step-n">2</span><svg class="ico" aria-hidden="true"><use href="#icoBox"/></svg></div>
           <h3>Ingredient kits</h3>
-          <p>Pre-measured ingredients straight to your front door. No grocery shopping, no food waste and no excuses.</p>
+          <p>Everything for the recipe arrives weighed and labelled, so nothing is missing and nothing ends up in the bin.</p>
         </article>
         <article class="step">
           <div class="step-top"><span class="step-n">3</span><svg class="ico" aria-hidden="true"><use href="#icoCam"/></svg></div>
           <h3>Two-angle video</h3>
-          <p>One camera on the chef's face, one HD close-up of the cutting board and the stove. You never miss a detail, like how to chop an onion fast or control the heat.</p>
+          <p>Switch between the chef and an HD close-up of the board and the hob whenever you need to see the technique.</p>
         </article>
       </div>
-      <p class="recorded"><span class="rec-dot" aria-hidden="true"></span>Every session is recorded, so you can replay it whenever you want.</p>
+      <p class="recorded"><span class="rec-dot" aria-hidden="true"></span>Missed a step? Every class stays in your library, ready to watch again.</p>
     </div>
   </section>
 
@@ -527,7 +529,7 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
       <div class="sec-head">
         <p class="eyebrow"><svg class="zig" aria-hidden="true"><use href="#zig"/></svg>Benefits beyond a dinner</p>
         <h2>Restaurant food, without restaurant prices</h2>
-        <p class="lead">Eating at nice restaurants can be expensive. With our classes you get gourmet, restaurant-quality food while saving up to 40% on your monthly budget.</p>
+        <p class="lead">Cook the dishes you would normally order out and keep more of your food budget. Members save up to 40% a month.</p>
       </div>
       <div class="ben-grid">
         <article class="card calc">
@@ -549,7 +551,7 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
         </article>
         <article class="card">
           <h3>Zero stress</h3>
-          <p>No guessing cooking times and no burnt meals. Your chef guides you step by step.</p>
+          <p>Timers, heat levels and the next step are always on screen, and the chef checks the tricky moments with you.</p>
           <ul class="checks" aria-label="Example class steps">
             <li><span class="tick" aria-hidden="true">✓</span>Brown the beef<span class="t">8 min</span></li>
             <li><span class="tick" aria-hidden="true">✓</span>Simmer the bolognese<span class="t">15 min</span></li>
@@ -559,7 +561,7 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
         </article>
         <article class="card">
           <h3>Lifetime access</h3>
-          <p>Every session is recorded. Replay your favorite recipes whenever you want, plus a digital interactive cookbook.</p>
+          <p>Your classes stay in your account for good, together with an interactive cookbook you can search.</p>
           <ul class="recs">
             <li><span class="thumb" style="background:var(--yellow-soft)"><svg aria-hidden="true" style="color:var(--terracotta)"><use href="#icoPlay"/></svg></span><span class="rec-info"><b>Shakshuka for two</b><span>Recorded · 28 min</span></span><button type="button" data-rec="Shakshuka for two">Replay</button></li>
             <li><span class="thumb" style="background:var(--green-soft)"><svg aria-hidden="true" style="color:var(--green-deep)"><use href="#icoPlay"/></svg></span><span class="rec-info"><b>Risotto for two</b><span>Recorded · 45 min</span></span><button type="button" data-rec="Risotto for two">Replay</button></li>
@@ -575,11 +577,10 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
     <div class="wrap join-grid">
       <div class="join-copy">
         <p class="eyebrow"><svg class="zig" aria-hidden="true"><use href="#zig"/></svg>Ready?</p>
-        <h2>Stop cooking boring meals and waiting for delivery!</h2>
-        <p class="lead">Are you ready to level up your kitchen skills and surprise your friends and family?</p>
+        <h2>Your next favorite dinner starts this week</h2>
+        <p class="lead">Subscribe now, choose your first class and your box is on its way.</p>
         <div class="offer"><span class="big">50% OFF</span><span class="sub">your first box of ingredients when you subscribe</span><span class="plus">+ free first delivery</span></div>
         <p class="countdown">Subscribe this week. Offer ends in <b id="cd">–</b></p>
-        <p class="stamp">No cuts. No buts. No coconuts.</p>
       </div>
       <div class="join-card" id="joinCard">
         <form id="joinForm" novalidate class="success" style="gap:14px">
@@ -612,8 +613,11 @@ input[type=range]{width:100%;accent-color:var(--tomato)}
 <footer class="foot">
   <div class="wrap foot-in">
     <svg width="56" height="56" aria-hidden="true"><use href="#hat"/></svg>
-    <p class="thanks">Thank you so much for your time and attention!</p>
-    <p class="names">Presented by <b>Johanna Navarro Contreras</b> and <b>Mia De la Cruz Yesquen</b></p>
+    <p class="foot-brand" translate="no">Online Cooking Class</p>
+    <div class="presenters">
+      <p><span>Presented by</span><b>Johanna Navarro Contreras</b></p>
+      <p><span>Presented by</span><b>Mia De la Cruz Yesquen</b></p>
+    </div>
     <p class="small"><span translate="no">Online Cooking Class</span> is a prototype made for a role-play sales pitch. It shows what the service could look like; classes, chefs, times and the discount code are demo data.</p>
   </div>
 </footer>
